@@ -20,7 +20,6 @@ void Time::print() const
 	cout << setw(2) << setfill('0') << hour << ":"
 		<< setw(2) << setfill('0') << minute << ":"
 		<< setw(2) << setfill('0') << second << "\n";
-
 }
 
 bool Time::equals(const Time &otherTime)
