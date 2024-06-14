@@ -4,25 +4,25 @@
 
 using namespace std;
 
-Time::Time(const int h, const int m, const int s)
-	: hour(h), minute(m), second(s)
-{}
+Time::Time(int h, int m, int s) : hour(h), minute(m), second(s)
+{
+}
 
-void Time::setTime(const int h, const int m, const int s)
+void Time::setTime(int h, int m, int s)
 {
 	hour = h;
 	minute = m;
 	second = s;
 }
 
-void Time::print() const
+void Time::print()
 {
 	cout << setw(2) << setfill('0') << hour << ":"
 		<< setw(2) << setfill('0') << minute << ":"
 		<< setw(2) << setfill('0') << second << "\n";
 }
 
-bool Time::equals(const Time &otherTime)
+bool Time::equals(Time otherTime)
 {
 	if (hour == otherTime.hour
 		&& minute == otherTime.minute

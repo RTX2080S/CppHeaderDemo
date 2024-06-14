@@ -11,13 +11,13 @@ private:
 	int second;
 public:
 	//with default value
-	Time(const int h = 0, const int m = 0, const int s = 0);
+	Time(int h = 0, int m = 0, int s = 0);
 	//	setter function
-	void setTime(const int h, const int m, const int s);
+	void setTime(int h, int m, int s);
 	// Print a description of object in " hh:mm:ss"
-	void print() const;
+	void print();
 	//compare two time object
-	bool equals(const Time&);
+	bool equals(Time time);
 };
 
 #endif
