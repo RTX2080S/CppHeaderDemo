@@ -4,8 +4,11 @@
 
 using namespace std;
 
-Time::Time(int h, int m, int s) : hour(h), minute(m), second(s)
+Time::Time(int h, int m, int s)
 {
+	hour = h;
+	minute = m;
+	second = s;
 }
 
 void Time::setTime(int h, int m, int s)
